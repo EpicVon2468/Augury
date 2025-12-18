@@ -29,6 +29,7 @@ dependencies {
 
 tasks.withType<JavaExec> {
 	jvmArgs("--enable-native-access=ALL-UNNAMED")
+	jvmArgs("-XX:+UseCompactObjectHeaders")
 }
 
 tasks.withType(ProcessResources::class) {
