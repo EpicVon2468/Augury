@@ -1,5 +1,6 @@
 package io.github.epicvon2468.augury
 
+import io.github.epicvon2468.augury.registry.blocks.AuguryBlocks
 import io.github.epicvon2468.augury.registry.items.AuguryItems
 
 import net.deadlydiamond98.koalalib.ToggleableContent
@@ -12,5 +13,6 @@ data object Augury : ModInitialiser {
 	override fun onInitialize() {
 		ToggleableContent.enableMagicBar()
 		AuguryItems
+		AuguryBlocks
 	}
 }
