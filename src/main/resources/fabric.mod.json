@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "augury",
+	"version": "${version}",
+	"name": "Augury",
+	"description": "I didn't ask how big the room is;  I said I cast fireball!",
+	"authors": [
+		"Mavity The Madity"
+	],
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"adapter": "kotlin",
+				"value": "io.github.epicvon2468.augury.Augury"
+			}
+		],
+		"client": [
+			{
+				"adapter": "kotlin",
+				"value": "io.github.epicvon2468.augury.AuguryClient"
+			}
+		]
+	},
+	"mixins": [
+		"augury.mixins.json"
+	],
+	"depends": {
+		"minecraft": "1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
