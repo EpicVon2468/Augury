@@ -11,5 +11,5 @@ import net.minecraft.util.Identifier
 data object AuguryBlocks {
 
 	@JvmStatic
-	fun <T : Block> registerBlock(identifier: String, block: T) = Registry.register(Registries.BLOCK, Identifier(MOD_ID, identifier), block)
+	fun <T : Block> registerBlock(identifier: String, block: T): T = Registry.register(Registries.BLOCK, Identifier(MOD_ID, identifier), block)
 }

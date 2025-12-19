@@ -11,13 +11,4 @@ inline fun LivingEntity.getMaxMana(): Int = MagicBarHelper.getMaxMana(this)
 
 inline fun LivingEntity.setMana(amount: Int) = MagicBarHelper.setMana(this, amount)
 
-inline fun LivingEntity.setMaxMana(amount: Int) = MagicBarHelper.setMaxMana(this, amount)
-
 inline fun LivingEntity.addMana(amount: Int) = MagicBarHelper.addMana(this, amount)
-
-inline fun LivingEntity.increaseMaxMana(
-	amount: Int,
-	replenish: Boolean = false
-) = MagicBarHelper.increaseMaxMana(this, amount, replenish)
-
-inline fun LivingEntity.decreaseMaxMana(amount: Int) = MagicBarHelper.decreaseMaxMana(this, amount)

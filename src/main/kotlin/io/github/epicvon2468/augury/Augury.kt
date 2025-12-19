@@ -1,5 +1,6 @@
 package io.github.epicvon2468.augury
 
+import io.github.epicvon2468.augury.registry.blockentities.AuguryBlockEntities
 import io.github.epicvon2468.augury.registry.blocks.AuguryBlocks
 import io.github.epicvon2468.augury.registry.items.AuguryItems
 
@@ -14,5 +15,6 @@ data object Augury : ModInitialiser {
 		ToggleableContent.enableMagicBar()
 		AuguryItems
 		AuguryBlocks
+		AuguryBlockEntities
 	}
 }

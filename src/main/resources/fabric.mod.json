@@ -35,6 +35,11 @@
 		"java": ">=17",
 		"fabric-api": "*",
 		"fabric-language-kotlin": "*",
-		"koalalib": ">=1.2.10"
+		"koalalib": ">=1.2.11",
+		"ponder": ">=1.0.92"
+	},
+	"conflicts": {
+		"optifine": "*",
+		"optifabric": "*"
 	}
 }

@@ -12,6 +12,13 @@ repositories {
 	mavenCentral()
 	maven { url = URI("https://maven.terraformersmc.com/releases") }
 	maven { url = URI("https://api.modrinth.com/maven") }
+	// Ponder
+	maven { url = URI("https://maven.createmod.net") }
+	maven { url = URI("https://raw.githubusercontent.com/Fuzss/modresources/main/maven") }
+	// Ponder needs Porting Lib
+	maven { url = URI("https://mvn.devos.one/releases/") }
+	// Ponder needs Reach Entity Attributes >.>
+	maven { url = URI("https://maven.jamieswhiteshirt.com/libs-release") }
 }
 
 dependencies {
@@ -23,6 +30,7 @@ dependencies {
 	modImplementation(libs.fabric.kotlin)
 
 	modImplementation(libs.koala)
+	modImplementation(libs.ponder)
 
 	modRuntimeOnly(libs.modmenu)
 }

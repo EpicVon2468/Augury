@@ -7,7 +7,8 @@ fabric-loader = "0.18.3"
 fabric-kotlin = "1.13.8+kotlin.2.3.0"
 minecraft = "1.20.1"
 modmenu = "7.2.2"
-koala-lib = "1.2.10"
+koala-lib = "1.2.11"
+ponder = "1.0.92"
 
 [libraries]
 minecraft = { module = "net.minecraft:minecraft", version.ref = "minecraft" }
@@ -17,6 +18,7 @@ fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fab
 fabric-kotlin = { module = "net.fabricmc:fabric-language-kotlin", version.ref = "fabric-kotlin" }
 modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }
 koala = { module = "maven.modrinth:koala_lib", version.ref = "koala-lib" }
+ponder = { module = "net.createmod.ponder:Ponder-Fabric-1.20.1", version.ref = "ponder" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
