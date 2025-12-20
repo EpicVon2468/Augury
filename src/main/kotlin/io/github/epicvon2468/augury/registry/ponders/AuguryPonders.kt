@@ -1,5 +1,6 @@
 package io.github.epicvon2468.augury.registry.ponders
 
+import io.github.epicvon2468.augury.registry.ponders.entries.InstructionManualPonder
 import io.github.epicvon2468.augury.registry.ponders.entries.debug.TestPonder
 import io.github.epicvon2468.augury.util.MOD_ID
 
@@ -23,6 +24,7 @@ data object AuguryPonders : PonderPlugin {
 	init {
 		println("Ponder detected!  AuguryPonders adding self to PonderIndex!")
 		PonderIndex.addPlugin(this)
+		this.registerPonder(InstructionManualPonder())
 		if (FabricLoader.getInstance().isDevelopmentEnvironment) {
 			this.registerPonder(TestPonder())
 		}

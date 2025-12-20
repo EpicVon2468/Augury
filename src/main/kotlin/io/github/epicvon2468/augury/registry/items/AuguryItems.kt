@@ -13,6 +13,9 @@ data object AuguryItems {
 	@JvmField
 	val TEST: Item = registerItem("test", Item(FabricItemSettings()))
 
+	@JvmField
+	val MANUAL: Item = registerItem("manual", Item(FabricItemSettings()))
+
 	@JvmStatic
 	fun <T : Item> registerItem(identifier: String, item: T): T = Registry.register(Registries.ITEM, identifier.toIdentifier(), item)
 }
