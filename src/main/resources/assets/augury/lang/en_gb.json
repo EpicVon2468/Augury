@@ -1,3 +1,10 @@
 {
-	"item.augury.test": "Test Item"
+	"item.augury.test": "Test Item",
+
+	"augury.ponder.test.header": "TITLECARD!!!",
+	"augury.ponder.shared.test.message_1": "This... is a crafting table! (0)",
+	"augury.ponder.shared.test.message_2": "This... is a crafting table! (1)",
+	"augury.ponder.shared.test.message_3": "This... is a crafting table! (2)",
+	"augury.ponder.test.text_1": "Lol",
+	"augury.ponder.test.text_2": "Lmao even"
 }

@@ -25,7 +25,7 @@ fun SelectionUtil.fromTo(range: OpenEndRange<BlockPos>): Selection = this.fromTo
 data class BlockPosRange(
 	override val start: BlockPos,
 	override val endInclusive: BlockPos,
-	val inclusive: Boolean = true
+	@JvmField val inclusive: Boolean = true
 ) : ClosedRange<BlockPos>, OpenEndRange<BlockPos> {
 
 	override val endExclusive: BlockPos = endInclusive + ONE
